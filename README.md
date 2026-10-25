@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-OWeb
+
+OWeb is a web-application reconnaissance and assessment suite that fingerprints technologies, enumerates endpoints and checks for common web misconfigurations. It crawls a target, identifies server and framework details, inspects security headers and surfaces potential issues. It runs as a desktop application for authorized web-security testing.
 
 ---
 
 ## ✨ Features
 
-- Web headers, TLS, cookies, and DNS posture
+
+- Technology fingerprinting (server, framework, CMS) from responses and headers
+- Endpoint enumeration and crawling of the target application
+- Security-header inspection (HSTS, CSP, X-Frame-Options and more)
+- Detection of common web misconfigurations and information disclosure
+- Export of findings for reporting
+- Desktop UI in the OWLSec theme with an offline --self-test
 
 ---
 
@@ -37,8 +44,11 @@ OWeb
 
 ## 🚀 Usage
 
+
 ```bash
 ./OWeb
+./OWeb --self-test
+./OWeb --help
 ```
 
 ---
